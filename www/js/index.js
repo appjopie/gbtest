@@ -6,7 +6,7 @@ function setContainer() {
 			var containerWidth = $(window).width() - ( bodymargin * 2 );
 			var containerHeight = $(window).height() - ( bodymargin * 2 );
 			container.css({ width : containerWidth + 'px', height : containerHeight + 'px' });
-			container.html(containerWidth + '-' + containerHeight);
+			//container.html(containerWidth + '-' + containerHeight);
 			
 }
 

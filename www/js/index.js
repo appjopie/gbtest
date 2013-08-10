@@ -1,4 +1,4 @@
-var bodymargin = 5;
+var bodymargin = 10;
 
 function setContainer() {
 			var container = $('#container');

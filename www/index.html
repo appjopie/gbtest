@@ -115,7 +115,7 @@
 	});
 
 	$(document).ready(function(){
-		$('a[data-test]').click(function(){
+		$('a[data-test]').bind('onmouseover',function(){
 			var anim = $(this).attr('data-test');
 			testAnim(anim);
 		});

@@ -16,7 +16,7 @@
  
 
 <div class="sandbox">
-<div id="animateTest" class="bounce">
+<div id="animateTest">
 <p>I fight for the user.</p>
 </div>
 </div>
@@ -93,6 +93,8 @@
 	
 
 <script type="text/javascript">
+
+	
 	function testAnim(x) {
 		$('#animateTest').removeClass().addClass(x);
 		var wait = window.setTimeout( function(){
@@ -114,6 +116,15 @@
 	});
 
 	$(document).ready(function(){
+
+		$('#animateTest').bind('touchstart',function(){
+			$(this).addClass('pulse');
+		});
+		
+		$('#animateTest').bind('touchend',function(){
+			$(this).removeClass();
+		});
+		
 		$('a[data-test]').bind('touchmove',function(){
 			var anim = $(this).attr('data-test');
 			testAnim(anim);

@@ -17,5 +17,24 @@
     	<script type="text/javascript" src="js/jquery-latest.min.js"></script>
     	<script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="phonegap.js"></script>
+        
+         <script type="text/rocketscript">
+	function testAnim(x) {
+		$('#animateTest').removeClass().addClass(x);
+		var wait = window.setTimeout( function(){
+			$('#animateTest').removeClass()},
+			1300
+		);
+	}
+
+	$(document).ready(function(){
+		$('a[data-test]').click(function(){
+			var anim = $(this).attr('data-test');
+			testAnim(anim);
+		});
+	});
+
+	</script>
+	
     </body>
 </html>

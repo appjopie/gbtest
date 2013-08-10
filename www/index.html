@@ -118,14 +118,14 @@ nnn
 	$(document).ready(function(){
 
 		$('#animateTest').bind('touchstart',function(){
-			$(this).addClass('pulse');
+			$('#animateTest').removeClass().addClass('pulse');
 		});
 		
 		$('#animateTest').bind('touchend',function(){
-			$(this).removeClass();
+			$('#animateTest').removeClass();
 		});
 		
-		$('a[data-test]').bind('touchmove',function(){
+		$('a[data-test]').bind('touchstart',function(){
 			var anim = $(this).attr('data-test');
 			testAnim(anim);
 		});

@@ -1,6 +1,4 @@
-
 var bodymargin = 5;
-
 
 function setContainer() {
 			$('body').css({padding : bodymargin + 'px' });
@@ -8,3 +6,7 @@ function setContainer() {
 			var containerHeight = $(window).height() - ( bodymargin * 2 );
 			$('#container').css({ width : containerWidth + 'px', width : containerHeight + 'px' });
 }
+
+$(document).ready(function() {
+	setContainer();
+});

@@ -92,6 +92,7 @@
          <script type="text/rocketscript">
 	function testAnim(x) {
 		$('#animateTest').removeClass().addClass(x);
+		alert(x);
 		var wait = window.setTimeout( function(){
 			$('#animateTest').removeClass()},
 			1300

@@ -114,7 +114,7 @@
 	});
 
 	$(document).ready(function(){
-		$('a[data-test]').mouseover(function(){
+		$('a[data-test]').bind('ontouchmove',function(){
 			var anim = $(this).attr('data-test');
 			testAnim(anim);
 		});
